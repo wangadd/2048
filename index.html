@@ -1,0 +1,84 @@
+
+<!-- /*
+* @Author: Bai Gu
+* @Date: 2023-02-06 19:07:51
+* @Last Modified by:   Bai Gu
+* @Last Modified time: 2023-02-06 19:07:51
+*/ -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>2048游戏</title>
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+</head>
+
+<body>
+
+    <div class="top" id="top">
+        <div class="title" id="title">2048</div>
+        <div class="score_newGame" id="score_newGame">
+            <a class="newGame" id="newGame" href="javascript:game.initial()">新的开始</a>
+            <a class="back" id="back" href="javascript:game.goBack()">后退一步</a>
+            <span class="score">score:</span>
+            <span class="userScore" id="userScore">0</span>
+        </div>
+    </div>
+
+    <div class="container_base" id="container_base">
+        <div class="elem_0_0"></div>
+        <div class="elem_0_1"></div>
+        <div class="elem_0_2"></div>
+        <div class="elem_0_3"></div>
+        <div class="elem_1_0"></div>
+        <div class="elem_1_1"></div>
+        <div class="elem_1_2"></div>
+        <div class="elem_1_3"></div>
+        <div class="elem_2_0"></div>
+        <div class="elem_2_1"></div>
+        <div class="elem_2_2"></div>
+        <div class="elem_2_3"></div>
+        <div class="elem_3_0"></div>
+        <div class="elem_3_1"></div>
+        <div class="elem_3_2"></div>
+        <div class="elem_3_3"></div>
+    </div>
+
+    <div class="container" id="container">
+        <div class="elem_0_0" id="elem_0_0"></div>
+        <div class="elem_0_1" id="elem_0_1"></div>
+        <div class="elem_0_2" id="elem_0_2"></div>
+        <div class="elem_0_3" id="elem_0_3"></div>
+        <div class="elem_1_0" id="elem_1_0"></div>
+        <div class="elem_1_1" id="elem_1_1"></div>
+        <div class="elem_1_2" id="elem_1_2"></div>
+        <div class="elem_1_3" id="elem_1_3"></div>
+        <div class="elem_2_0" id="elem_2_0"></div>
+        <div class="elem_2_1" id="elem_2_1"></div>
+        <div class="elem_2_2" id="elem_2_2"></div>
+        <div class="elem_2_3" id="elem_2_3"></div>
+        <div class="elem_3_0" id="elem_3_0"></div>
+        <div class="elem_3_1" id="elem_3_1"></div>
+        <div class="elem_3_2" id="elem_3_2"></div>
+        <div class="elem_3_3" id="elem_3_3"></div>
+    </div>
+
+    <div class="gameOverContainer" id="gameOverContainer">
+        <br><br>
+        <span class="gameOver">Game over,</span>
+        <br><br>
+        <span>You lose!</span>
+    </div>
+
+    <div class="gameWinContainer" id="gameWinContainer">
+        <br><br>
+        <span class="gameWin">Game over,</span>
+        <br><br>
+        <span>You win!</span>
+    </div>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
